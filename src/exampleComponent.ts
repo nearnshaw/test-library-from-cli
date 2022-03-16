@@ -27,7 +27,6 @@ class RotatorSystem {
   }
 }
 
-// Add a new instance of the system to the engine
 engine.addSystem(new RotatorSystem())
 
 class UpdateCoinsSystem {
@@ -59,5 +58,4 @@ class UpdateCoinsSystem {
   }
 }
 
-// Add a new instance of the system to the engine
 engine.addSystem(new UpdateCoinsSystem())
