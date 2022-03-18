@@ -33,15 +33,15 @@ class UpdateCoinsSystem {
       if (!entity.getComponent(CoinComponent).isConverted) {
         entity.getComponent(CoinComponent).isConverted = true
 
-        entity.addComponent(new GLTFShape('assets/coin.glb'))
-        entity.addComponent(
-          new AudioSource(new AudioClip('assets/coinPickup.mp3'))
-        )
+        // entity.addComponentOrReplace(new GLTFShape('assets/coin.glb'))
+        // entity.addComponentOrReplace(
+        //   new AudioSource(new AudioClip('assets/coinPickup.mp3'))
+        // )
 
-        entity.addComponent(
+        entity.addComponentOrReplace(
           new OnPointerDown(
             () => {
-              entity.getComponent(AudioSource).playOnce()
+              //   entity.getComponent(AudioSource).playOnce()
               engine.removeEntity(entity)
             },
             { hoverText: 'Pick up', button: ActionButton.PRIMARY }
