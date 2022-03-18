@@ -53,3 +53,4 @@ class UpdateCoinsSystem {
 }
 
 engine.addSystem(new UpdateCoinsSystem())
+//
